@@ -1,26 +1,18 @@
 #![allow(non_snake_case)]
-struct Example
-{
-    a_integer: i32
-}
 
-impl Example
-{
-    fn new(tempInt: i32) -> Self
-    {
-        Example
-        {
-            a_integer: tempInt
-        }
-    }
-    fn printString(&self)
-    {
-        println!("{}",self.a_integer)
-    }
-}
+use crate::horse::Horse;
+mod horse;
 
 fn main() {
-    println!("Hello, world!");
-    let exampleData = Example::new(32);
-    exampleData.printString();
+    let horse1 = Horse{
+        name: String::from("Greg"),
+        breed: String::from("Arabian"),
+        colorDescription: String::from("Light Brown"),
+        otherComments: String::from("A bit dumb"),
+        registrationID: String::from("412ACD"),
+        spayedNeutered: String::from("Yes"),
+        weight: 660.82,
+        gender: 'm'
+    };
+    horse1.PrintInfo();
 }
