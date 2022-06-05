@@ -32,8 +32,8 @@ fn ExpEstimation(power: i128, errorBound : f64) -> f64
 
 fn main()
 {
-	let errorBound: f64 = 0.000000000000001;
-	let power: i128 = 2;
+	let errorBound: f64 = 0.0000000000000000000000001;
+	let power: i128 = 1;
 	let estimation: f64 = ExpEstimation(power.into(),errorBound);
 	println!("Estimation is {}", estimation);
 }
