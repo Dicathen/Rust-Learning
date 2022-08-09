@@ -22,6 +22,7 @@ fn ExpEstimation(power: i128, errorBound : f64) -> f64
 		println!("Iteration {}", iterationNum);
 		println!("Taylor Remainder is {}",taylorRemainder);
 		println!("Accum is {}", accum);
+		println!("Factorial is {}",factorial(iterationNum));
 		iterationNum = iterationNum + 1;
 	   if taylorRemainder < errorBound {
 	   	break;
