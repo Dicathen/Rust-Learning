@@ -2,7 +2,7 @@
 
 fn factorial(n: i128) -> i128
 {
-	if n == 0 || n == 1 {1} else {n * factorial(n-1)}
+	return (1..n).fold(1,|a,b|a*b);
 }
 
 fn iteration (power: i128, base: i128) -> f64
