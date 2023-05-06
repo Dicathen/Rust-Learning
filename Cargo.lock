@@ -5,3 +5,42 @@ version = 3
 [[package]]
 name = "Rust"
 version = "0.1.0"
+dependencies = [
+ "f256",
+]
+
+[[package]]
+name = "f256"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bac618be2b8b06b19fd977fe82dccddffd518acb98a93642af83e1ce31955fda"
+dependencies = [
+ "f256_pow10_div_pow2_lut",
+ "f256_pow2_div_pow10_lut",
+ "f256_pow2_div_pow5_lut",
+ "f256_pow5_div_pow2_lut",
+]
+
+[[package]]
+name = "f256_pow10_div_pow2_lut"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f6ca8d1ce1a433ed0939ca1e054b561002cbcb9740d1d36c18d89009eb003002"
+
+[[package]]
+name = "f256_pow2_div_pow10_lut"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "865c78f4c68f7634cc908dedcd9ecc9706d00744707c8227a92d6b78230ac8e9"
+
+[[package]]
+name = "f256_pow2_div_pow5_lut"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "76b7418cb2e2a5be0dfb64027d7f009f9660ed6875ee049bc5ff30be006fcf6e"
+
+[[package]]
+name = "f256_pow5_div_pow2_lut"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "250ea0f9a0eb0e71b9040133a84777ddfd97a3c57689c249acb5917e1d869cb8"
